@@ -1,0 +1,13 @@
+<form class="frm1" action="/" method="post">
+	<input class="npt1" type="text"name="login"/>
+	<input class="npt1" type="password"name="password"/>
+	<input class="npt1" type="submit" value="�����" name="log_in"/>
+</form>
+
+пароль bd - %Mq$h9+5Gi-R@Ny
+
+<?php
+        require_once ("db.php");
+        $cLogin='SELECT login FROM users WHERE id = $_SESSION['id'] ';
+        echo $cLogin;
+        ?>
